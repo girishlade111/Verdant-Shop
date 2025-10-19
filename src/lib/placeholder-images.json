@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-main",
+      "description": "A beautiful, lush green landscape representing the Verdant Shop brand.",
+      "imageUrl": "https://images.unsplash.com/photo-1667859233194-06a73d997651?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsdXNoJTIwbmF0dXJlfGVufDB8fHx8MTc2MDg3NDkwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lush nature"
+    },
+    {
+      "id": "product-1",
+      "description": "A high-quality ceramic vase.",
+      "imageUrl": "https://images.unsplash.com/photo-1526198049595-f32cde2a219d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjZXJhbWljJTIwdmFzZXxlbnwwfHx8fDE3NjA4Mzk4MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ceramic vase"
+    },
+    {
+      "id": "product-2",
+      "description": "A set of minimalist wooden coasters.",
+      "imageUrl": "https://images.unsplash.com/photo-1527455793090-2f7e25b26c9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b29kZW4lMjBjb2FzdGVyc3xlbnwwfHx8fDE3NjA3NzI0OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wooden coasters"
+    },
+    {
+      "id": "product-3",
+      "description": "An artisanal scented candle in a glass jar.",
+      "imageUrl": "https://images.unsplash.com/photo-1703254573169-5a424be2d8cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY2VudGVkJTIwY2FuZGxlfGVufDB8fHx8MTc2MDgyOTA5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scented candle"
+    },
+    {
+      "id": "product-4",
+      "description": "A soft, woven throw blanket.",
+      "imageUrl": "https://images.unsplash.com/photo-1721618879032-39948d5ebf63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0aHJvdyUyMGJsYW5rZXR8ZW58MHx8fHwxNzYwODc0OTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "throw blanket"
+    },
+    {
+      "id": "product-5",
+      "description": "A leather-bound journal.",
+      "imageUrl": "https://images.unsplash.com/photo-1720534195942-d55d1760df95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsZWF0aGVyJTIwam91cm5hbHxlbnwwfHx8fDE3NjA4MzU1ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leather journal"
+    },
+    {
+      "id": "product-6",
+      "description": "A modern stainless steel water bottle.",
+      "imageUrl": "https://images.unsplash.com/photo-1544003484-3cd181d17917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3YXRlciUyMGJvdHRsZXxlbnwwfHx8fDE3NjA4NDg4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water bottle"
+    },
+    {
+      "id": "checkout-success",
+      "description": "A cheerful image of a plant symbolizing a successful purchase.",
+      "imageUrl": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwb3R0ZWQlMjBwbGFudHxlbnwwfHx8fDE3NjA4NzQ5MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "potted plant"
+    }
+  ]
 }
