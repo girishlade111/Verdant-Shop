@@ -35,7 +35,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          © {currentYear} Verdant Shop. All rights reserved.
+          © {currentYear} Verdant Shop. All rights reserved. Powered by <Link href="https://ladestack.in" className="underline" target="_blank" rel="noopener noreferrer">Ladestack</Link>.
         </div>
       </div>
     </footer>
