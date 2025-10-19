@@ -5,6 +5,7 @@ export type Product = {
   longDescription: string;
   price: number;
   imageId: string;
+  category: 'vases' | 'coasters' | 'candles' | 'blankets' | 'journals' | 'bottles';
 };
 
 export type CartItem = {

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu, Leaf, User, ShoppingCart, LogOut } from 'lucide-react';
+import { Menu, Leaf, User, ShoppingCart, LogOut, Search, Heart } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -16,14 +16,23 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuPortal
 } from '@/components/ui/dropdown-menu';
 import { CartSheet } from '@/components/cart/cart-sheet';
 import { useCart } from '@/hooks/use-cart';
+import { Input } from '../ui/input';
 
 const navLinks = [
-  { href: '/products', label: 'Products' },
-  { href: '/#features', label: 'Features' },
-  { href: '/#about', label: 'About' },
+  { href: '/products', label: 'All Products' },
+  { href: '/products?category=vases', label: 'Vases' },
+  { href: '/products?category=coasters', label: 'Coasters' },
+  { href: '/products?category=candles', label: 'Candles' },
+  { href: '/products?category=blankets', label: 'Blankets' },
+  { href: '/products?category=journals', label: 'Journals' },
+  { href: '/products?category=bottles', label: 'Bottles' },
 ];
 
 export function SiteHeader() {
@@ -69,19 +78,42 @@ export function SiteHeader() {
         </Sheet>
         
         <div className="flex flex-1 items-center justify-between gap-2 md:justify-end">
-          <nav className="hidden md:flex gap-6">
-             {navLinks.slice(0, 1).map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
+          <nav className="hidden md:flex gap-4">
+             <Link
+                href="/products"
                 className="font-medium text-foreground/60 transition-colors hover:text-foreground"
               >
-                {link.label}
+                All Products
               </Link>
-            ))}
+            <DropdownMenu>
+                <DropdownMenuTrigger className="font-medium text-foreground/60 transition-colors hover:text-foreground flex items-center gap-1 outline-none">
+                    Categories
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                    {navLinks.slice(1).map(link => (
+                        <DropdownMenuItem key={link.href} asChild>
+                            <Link href={link.href}>{link.label}</Link>
+                        </DropdownMenuItem>
+                    ))}
+                </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
+          
+          <div className="flex items-center gap-4 md:ml-4">
+            <div className="relative hidden sm:block">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Input placeholder="Search products..." className="w-full rounded-lg bg-background pl-9" />
+            </div>
+          </div>
+
 
           <div className="flex items-center gap-2">
+            <Button variant="ghost" size="icon" asChild>
+                <Link href="/wishlist">
+                    <Heart className="h-5 w-5" />
+                    <span className="sr-only">Wishlist</span>
+                </Link>
+            </Button>
             <CartSheet>
                 <Button variant="ghost" size="icon" className="relative">
                 <ShoppingCart className="h-5 w-5" />
